@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  color: white;
+}
+a.btn {
+  background-color: #196bca;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 10px 10px;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px #2d2d2d;
+  min-width: 50.6px;
+  text-align: center;
+}
+a.btn:hover {
+  background-color: #5482d0;
+}
+a.btn:active {
+  transform: scale(0.95);
+}
+nav {
+  max-width: 1200px;
+  margin: auto;
+}
+.navbar {
+  background-color: gray;
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar #buscar {
+  border: none;
+  height: 25px;
+  width: 20vw;
+}
+#buscar::placeholder {
+  text-align: center;
+}
+.row {
+  display: flex;
+  margin: 20px auto;
+  max-width: 1200px;
+  background-color: red;
+}
+.col-1 {
+  flex-basis: 70%;
+}
+.col-2{
+	flex-basis: 30%;
+}
+.tarjeta {
+  display: flex;
+  border: 2px solid black;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
