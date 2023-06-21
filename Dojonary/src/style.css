@@ -3,10 +3,12 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+
 h1 {
   color: white;
 }
 a.btn {
+  display: block;
   background-color: #196bca;
   color: #fff;
   font-size: 14px;
@@ -46,19 +48,32 @@ nav {
 .row {
   display: flex;
   margin: 20px auto;
-  max-width: 1200px;
-  background-color: red;
+  max-width: 1000px;
 }
 .col-1 {
   flex-basis: 70%;
 }
-.col-2{
-	flex-basis: 30%;
+.col-2 {
+  flex-basis: 30%;
 }
 .tarjeta {
   display: flex;
   border: 2px solid black;
+  max-width: 900px;
   margin: 20px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+.col1.ti p,
+.col1.ti h2,
+.col1.ti a {
+  margin: 10px auto;
+  padding: 5px;
+  text-align: center;
+}
+.dojo {
+  margin-bottom: 20px;
+}
+#definition {
+  margin-bottom: 20px;
 }
