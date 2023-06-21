@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family: "Ninja Naruto";
+    src: url("../../fonts/njnaruto.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto';
+}
+header{
+    max-width: 1200px;
+    background-color: #333;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+h1#title{
+    display: block;
+    color: white;
+    font-family: 'Ninja Naruto';
+}
+h2{
+    text-align: center;
+}
+main{
+    max-width: 1000px;
+    margin: auto;
+}
+.tarjeta{
+    border: #333 2px solid;
+    max-width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.tarjeta-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+.tarjeta-body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
