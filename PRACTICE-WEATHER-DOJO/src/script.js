@@ -1,6 +1,6 @@
 function eliminarCookies() {
   var contenedorCookie = document.getElementById("cookie");
-  contenedorCookie.style.display = "none";
+  contenedorCookie.remove();
 }
 
 function cToF(celsius) {
@@ -21,7 +21,7 @@ enlacesCiudad.forEach(function (enlace) {
     const nombreCiudad = enlace.textContent;
 
     const h3Elemento = document.querySelector(".subheader h3");
-    alert("Cargando informe meteorolégico...\n");
+    alert("Cargando informe meteorológico...\n");
     h3Elemento.textContent = nombreCiudad;
 
     console.log(`Mostrar información de la ciudad: ${nombreCiudad}`);
