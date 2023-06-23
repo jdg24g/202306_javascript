@@ -77,6 +77,12 @@ select {
 .num{
   margin: 5px;
 }
+.num-1{
+  color: red;
+}
+.num-2{
+  color: blue;
+}
 .img-1{
   background-image: url('../assets/some_rain.png');
 }
@@ -92,7 +98,6 @@ select {
 
 
 @media (max-width: 486px) {
-  /* Estilos para pantallas menores a 486px */
   .subheader{
     display: flex;
     justify-content: space-around;
