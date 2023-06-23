@@ -9,6 +9,7 @@ enlacesCiudad.forEach(function (enlace) {
     const nombreCiudad = enlace.textContent; 
 
     const h3Elemento = document.querySelector(".subheader h3");
+    alert("Cargando informe meteorolégico...\n")
     h3Elemento.textContent = nombreCiudad;
 
     console.log(`Mostrar información de la ciudad: ${nombreCiudad}`);

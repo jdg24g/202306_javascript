@@ -5,7 +5,7 @@
   font-family: "Roboto";
 }
 nav {
-  max-width: 1000px;
+  max-width: 1200px;
   padding: 20px;
   margin: 0 auto;
   display: flex;
@@ -35,12 +35,16 @@ main {
   border-bottom: 1px solid black;
   align-items: center;
 }
+.subheader h3{
+  margin-left: 10px;
+}
 #temp {
   display: flex;
 }
 #temp p,
 select {
   margin-left: 10px;
+  margin-right: 10px;
 }
 #weather {
   display: flex;
