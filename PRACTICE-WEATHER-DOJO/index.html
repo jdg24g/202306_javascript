@@ -23,13 +23,13 @@
   <main>
     <div class="subheader">
       <h3>Burbank</h3>
-        <div id="temp">
-          <p>show temperature in</p>
-          <select name="temperature" id="temperature-select">
-            <option value="C">°C</option>
-            <option value="F">°F</option>
-          </select>
-        </div>
+      <div id="temp">
+        <p>show temperature in</p>
+        <select name="temperature" id="temperature-select">
+          <option value="F">°F</option>
+          <option value="C">°C</option>
+        </select>
+      </div>
     </div>
     <div id="weather">
       <div class="card-weather">
@@ -37,8 +37,8 @@
         <div class="img img-1"></div>
         <p>some rain</p>
         <div class="temp-selected">
-          <p class="num num-1">75º</p>
-          <p class="num num-2">65º</p>
+          <p class="num num-1">75<span>º</span></p>
+          <p class="num num-2">64<span>º</span></p>
         </div>
       </div>
       <div class="card-weather">
@@ -46,8 +46,8 @@
         <div class="img img-2"></div>
         <p>some sun</p>
         <div class="temp-selected">
-          <p class="num num-1">80º</p>
-          <p class="num num-2">66º</p>
+          <p class="num num-1">81<span>º</span></p>
+          <p class="num num-2">66<span>º</span></p>
         </div>
       </div>
       <div class="card-weather">
@@ -55,8 +55,8 @@
         <div class="img img-3"></div>
         <p>some clouds</p>
         <div class="temp-selected">
-          <p class="num num-1">69º</p>
-          <p class="num num-2">61º</p>
+          <p class="num num-1">70<span>º</span></p>
+          <p class="num num-2">61<span>º</span></p>
         </div>
       </div>
       <div class="card-weather">
@@ -64,12 +64,24 @@
         <div class="img img-4"></div>
         <p>some sun</p>
         <div class="temp-selected">
-          <p class="num num-1">78º</p>
-          <p class="num num-2">70º</p>
+          <p class="num num-1">79<span>º</span></p>
+          <p class="num num-2">70<span>º</span></p>
         </div>
       </div>
     </div>
   </main>
+  <div id="cookie">
+    <div class="cookie-img"></div>
+    <div id="cookie-body">
+      <h4>Stop! Cookie time</h4>
+      <p>We use cookies(sadly not the edible ones) to personalize content and ads, to provide social media features and
+        to analyse our traffic. <a href="#">Read more...</a></p>
+    </div>
+    <a href="#" onclick="eliminarCookies()" class="btn">Accept</a>
+  </div>
+  <footer>
+
+  </footer>
   <script src="src/script.js"></script>
 </body>
 

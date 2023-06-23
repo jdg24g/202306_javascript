@@ -95,7 +95,59 @@ select {
 .img-4{
   background-image: url('../assets/some_sun.png');
 }
+#cookie {
+  display: flex;
+  max-width: 1000px;
+  border: 1px solid black;
+  padding: 20px;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 50px; 
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 70%;
+}
 
+
+#cookie-body p{
+  max-width: 600px;
+}
+.cookie-img{
+  background-image: url(../assets/cookie.png);
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+}
+
+.btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #9fc5f8;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  touch-action: manipulation;
+}
+
+.btn:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 0.25em 0.75em;
+  }
+}
 
 @media (max-width: 486px) {
   .subheader{
