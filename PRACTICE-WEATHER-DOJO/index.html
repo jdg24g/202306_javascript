@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
-    <title>WEATHER-DOJO</title>
-  </head>
-  <body>
-		<header>
-      <nav>
-        <h2>DojoWeather</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/style.css" />
+  <meta name="theme-color" content="#9fc5f8">
+  <title>WEATHER-DOJO</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h2>DojoWeather</h1>
         <div class="nav-bar">
-          <a href="#">Burbank</a>
-          <a href="#">Chicago</a>
-          <a href="#">Dallas</a>
+          <a class="ciudad" href="#">Burbank</a>
+          <a class="ciudad" href="#">Chicago</a>
+          <a class="ciudad" href="#">Dallas</a>
         </div>
-      </nav>
-    </header>
-    <main>
-      <div class="subheader">
-        <h3>Burbank</h2>
+    </nav>
+  </header>
+  <main>
+    <div class="subheader">
+      <h3>Burbank</h2>
         <div id="temp">
           <p>show temperature in</p>
           <select name="temperature" id="temperature-select">
@@ -27,8 +30,47 @@
             <option value="F">°F</option>
           </select>
         </div>
+    </div>
+    <div id="weather">
+      <div class="card-weather">
+        <h3>Today</h3>
+        <div class="img img-1"></div>
+        <p>some rain</p>
+        <div class="temp-selected">
+          <p class="num num-1">75º</p>
+          <p class="num num-2">65º</p>
+        </div>
       </div>
-    </main>
-    <script src="src/script.js"></script>
-  </body>
+      <div class="card-weather">
+        <h3>Today</h3>
+        <div class="img img-2"></div>
+        <p>some sun</p>
+        <div class="temp-selected">
+          <p class="num num-1">80º</p>
+          <p class="num num-2">66º</p>
+        </div>
+      </div>
+      <div class="card-weather">
+        <h3>Today</h3>
+        <div class="img img-3"></div>
+        <p>some clouds</p>
+        <div class="temp-selected">
+          <p class="num num-1">69º</p>
+          <p class="num num-2">61º</p>
+        </div>
+      </div>
+      <div class="card-weather">
+        <h3>Today</h3>
+        <div class="img img-4"></div>
+        <p>some sun</p>
+        <div class="temp-selected">
+          <p class="num num-1">78º</p>
+          <p class="num num-2">70º</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="src/script.js"></script>
+</body>
+
 </html>
