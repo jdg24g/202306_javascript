@@ -15,39 +15,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var elementosSolicitudConexion = document.querySelectorAll(".card-list-item");
 
-  if (elementosSolicitudConexion) {
-    elementosSolicitudConexion.forEach(function (item) {
-      var botonAceptar = item.querySelector(".icon.accept");
-      var botonCerrar = item.querySelector(".icon.no-accept");
-
-      if (botonAceptar && botonCerrar) {
-        botonAceptar.addEventListener("click", function () {
-          item.remove();
-          aumentarValorInsignia();
-          var addicionar = document.getElementById("badge-connection");
-          addicionar.textContent = parseInt(addicionar.textContent) + 1;
-        });
-
-        botonCerrar.addEventListener("click", function () {
-          item.remove();
-          aumentarValorInsignia();
-        });
-      }
-    });
-  }
-
-  function aumentarValorInsignia() {
+  elementosSolicitudConexion.forEach(function (item) {
+    var botonAceptar = item.querySelector(".icon.accept");
+    var botonCerrar = item.querySelector(".icon.no-accept");
     var elementoInsignia = document.querySelector(".card-header .badge");
-    
-    if (elementoInsignia) {
-      elementoInsignia.textContent = parseInt(elementoInsignia.textContent) - 1;
 
-      if (elementoInsignia.textContent === "0") {
-        var conexion = document.getElementById("connection");
-        if (conexion) {
-          conexion.remove();
-        }
-      }
+    botonAceptar.addEventListener("click", function () {
+      item.remove();
+      aumentarValorInsignia(elementoInsignia);
+      var addicionar = document.getElementById("badge-connection");
+      addicionar.textContent = parseInt(addicionar.textContent) + 1;
+    });
+
+    botonCerrar.addEventListener("click", function () {
+      item.remove();
+      aumentarValorInsignia(elementoInsignia);
+    });
+  });
+
+  function aumentarValorInsignia(elementoInsignia) {
+    elementoInsignia.textContent = parseInt(elementoInsignia.textContent) - 1;
+
+    if (elementoInsignia.textContent === "0") {
+      var conexion = document.getElementById("connection");
+      conexion.remove();
     }
   }
 });
