@@ -161,4 +161,10 @@ select {
   .ciudad{
     font-size: 1.5vh;
   }
+  #cookie{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #EEEEEE;
+  }
 }
