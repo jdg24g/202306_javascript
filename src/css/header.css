@@ -19,7 +19,7 @@ header{
     padding: 0 100px;
     position: fixed;
     width: 100vw;
-
+    z-index: 2;
 }
 
 .logo{
