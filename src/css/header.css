@@ -80,13 +80,15 @@ header{
         left: 0;
         right: 0;
         width: 100vw;
-        background: #11101b;
+        background: #11101be3;
+        
         transition: 0.2s;
         overflow: hidden;
     }
     .nav-bar.active{
         width: 100vw;
-        height: 450px;
+        height: 100vh;
+        backdrop-filter: blur(5px);
     }
     .nav-bar ul {
         display: block;

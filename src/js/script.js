@@ -1,6 +1,7 @@
+const navBar = document.querySelector(".nav-bar")
 const hamburger = document.querySelector(".hamburger")
 hamburger.addEventListener("click", () => {
-	const navBar = document.querySelector(".nav-bar")
+	
 	navBar.classList.toggle("active")
 })
 const header = document.querySelector("header")
@@ -27,12 +28,13 @@ window.addEventListener("scroll", () => {
 		document.querySelector("meta[name='theme-color']").setAttribute("content", "#4c0079")
     header.style.background = "rgba(77, 0, 121, 0.80)"
     header.style.transition = "all 0.5s"
-
+    header.style.backdropFilter = "blur(5px)"
     console.log("giro")
 	}
 	else{
 		header.style.background = "#4c0079"
     console.log("tenemos")
+    header.style.backdropFilter = "none"
 	}
 
 })
