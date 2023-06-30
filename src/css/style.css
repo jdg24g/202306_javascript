@@ -15,7 +15,7 @@
 }
 .img-card:hover{
     box-shadow: rgba(77, 0, 121, 0.671) 0px 0px 0px 3px;
-    transition: all  ease 0.8s;
+    transition: all  ease 0.5s;
 }
 .img-card{
     display: flex;
@@ -35,8 +35,8 @@
     
 }
 .img-card:hover{
-  background: #4d0079ab;
-  transition: all ease 1s;
+  background: #4d0079;
+  transition: all ease 0.5s;
 }
 
 @media only screen and (max-width: 900px) {
