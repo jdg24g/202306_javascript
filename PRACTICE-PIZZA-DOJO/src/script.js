@@ -33,12 +33,12 @@ const container = document.querySelector(".container");
 select.addEventListener("input", function(event) {
     console.log(event.target.value);
     if (event.target.value == "pizza1") {
-        alert(pizza1);
+        alert("estilo Chicago\n"+ pizza1);
     } else if (event.target.value == "pizza2") {
-        alert(pizza2);
+        alert("lanzada a mano\n"+pizza2);
     } else if (event.target.value == "pizza3") {
-        alert(pizza3);
+        alert("estilo NY\n"+pizza3);
     } else if (event.target.value == "pizza4") {
-        alert(pizza4);
+        alert("estilo NY\n"+pizza4);
     }
 });
