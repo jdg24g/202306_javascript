@@ -50,7 +50,7 @@ function calculate() {
   let b11 = String(b1);
   let res = 0;
   if (a11 == "NaN" | op == ""|b11  == "NaN"){
-    alert("No puedes realizar operaciones sin darle a un operador");
+    alert("No puedes realizar operaciones sin darle a un operador o sin asignar otro numero");
 	  return;
   }
   switch (op) {
