@@ -1,7 +1,7 @@
 const display = document.getElementById("display");
 const card = document.querySelector(".card");
-const clicksound = new Audio('OPTIONAL-CALCULATOR/assets//click.wav');
-const recycle = new Audio('OPTIONAL-CALCULATOR/assets/recycle.mp3');
+const clicksound = new Audio('./assets/click.wav');
+const recycle = new Audio('./assets/recycle.mp3');
 async function cliki(){
 	clicksound.play()
 	setTimeout(() => {
@@ -43,9 +43,16 @@ function calculate() {
   }
   let a = parseFloat(num2);
   let a1 = a;
+  let a11 = String(a1);
+ 
   let b = parseFloat(num1);
   let b1 = b;
+  let b11 = String(b1);
   let res = 0;
+  if (a11 == "NaN" | op == ""|b11  == "NaN"){
+    alert("No puedes realizar operaciones sin darle a un operador");
+	  return;
+  }
   switch (op) {
     case "+":
       res = a + b;
@@ -63,9 +70,12 @@ function calculate() {
   num1 = res;
   display.innerHTML = res;
   const historial = `${b1} ${op} ${a1} = ${display.innerHTML}`;
+  console.log("op: "+ op)
+  console.log("num2: "+b1)
+  console.log("num1: "+a1)
   card.style.display = "flex";
   card.innerHTML += `<p class="historial-item">${historial}</p>`;
-	console.log(card.childElementCount)
+	
 	if(card.childElementCount >5){
 		card.removeChild(card.firstChild);
 	}
