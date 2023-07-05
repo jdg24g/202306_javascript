@@ -22,7 +22,7 @@ main {
 
 #display {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 32.5px;
   text-align: right;
   margin-bottom: 10px;
   width: 100%;
@@ -32,16 +32,16 @@ main {
 }
 
 .row {
-  height: 4rem;
+  height: 52px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 button {
-  font-size: 1.8rem;
-  width: 3rem;
-  height: 3rem;
+  font-size: 23.4px;
+  width: 39px;
+  height: 39px;
   border-radius: 50%;
   background-color: #666;
   color: #fff;
@@ -73,13 +73,14 @@ button:active {
 }
 
 .card {
-  width: 240px;
-  height: 405px;
-  position: relative;
-  right: 10px;
-  z-index: -1;
   flex-direction: column-reverse;
   display: none;
+  width: 240px;
+  height: 394px;
+  position: relative;
+  z-index: -1;
+  right: 10px;
+  
 }
 .card-historial {
   background-color: blue;
@@ -88,10 +89,12 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  font-weight: 900;
+  font-size: 22px;
   color: black;
   width: 240px;
   height: 67.5px;
+  border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }

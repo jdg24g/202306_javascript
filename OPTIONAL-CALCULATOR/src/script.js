@@ -1,5 +1,5 @@
 const display = document.getElementById("display");
-const card = document.querySelector(".card");
+
 const clicksound = new Audio('./assets/click.wav');
 const recycle = new Audio('./assets/recycle.mp3');
 async function cliki(){
@@ -36,6 +36,7 @@ function clr() {
 }
 
 function calculate() {
+  const card = document.querySelector(".card");
 	cliki();
   if (display.innerHTML === "0") {
     alert("No puedes realizar operaciones con 0");
@@ -76,14 +77,17 @@ function calculate() {
   card.style.display = "flex";
   card.innerHTML += `<p class="historial-item">${historial}</p>`;
 	
-	if(card.childElementCount >5){
+	if(card.childElementCount >6){
 		card.removeChild(card.firstChild);
 	}
   op = "";
 }
 
 function clrHistorial() {
-  card.innerHTML = "";	
+  const card = document.querySelector(".card");
+  while (card.firstChild) {
+    card.removeChild(card.firstChild);
+  }
   clr();
   card.style.display = "none";
 }
