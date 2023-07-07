@@ -1,0 +1,74 @@
+body {
+  background: #c9d6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e2e2e2,
+    #c9d6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e2e2e2,
+    #c9d6ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+main {
+  display: flex;
+  width: 100%;
+  margin: 20px auto;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+#reloj {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-image: url("../../assets/img/clock.png");
+  background-size: cover;
+  position: relative;
+	transition: all ease 0.3s
+}
+
+#min,
+#hor,
+#seg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: top center;
+}
+
+#hor {
+  background-color: black;
+  height: 100px;
+  width: 8px;
+}
+
+#min {
+  background-color: grey;
+  height: 120px;
+  width: 4px;
+}
+
+#seg {
+  background-color: red;
+  height: 130px;
+  width: 2px;
+}
+@media (max-width: 365px) {
+  #reloj{
+		width: 200px;
+		height: 200px;
+		transition: all ease 0.3s;
+	}
+	#hor{
+		height: 60px;
+	}
+	#seg{
+		height: 80px;
+	}
+	#min{
+		height: 70px;
+	}
+}
+
