@@ -1,5 +1,5 @@
-.fix{
-    height: 70px;
+.fix {
+  height: 70px;
 }
 .img-container {
   padding: 20px;
@@ -7,44 +7,51 @@
   grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   gap: 10px;
 }
-.img-card> img{
+.img-card > img {
   border-radius: 8px;
   width: 100%;
   height: auto;
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
-.img-card:hover{
-    box-shadow: rgba(77, 0, 121, 0.671) 0px 0px 0px 3px;
-    transition: all  ease 0.5s;
-    scale: 1.01;
-
+.img-card:hover {
+  box-shadow: rgba(77, 0, 121, 0.671) 0px 0px 0px 3px;
+  transition: all ease 0.5s;
+  scale: 1.01;
 }
-.img-card{
-    display: flex;
-    background-color: rgb(201, 201, 201);
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-    border-radius: 8px;
+.img-card {
+  display: flex;
+  background-color: rgb(201, 201, 201);
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  border-radius: 8px;
 }
-.img-card p{
-    text-transform: uppercase;
-    height: 60px;
-    line-height: 60px; 
-    font-weight: 700;
-    font-size: large;
-    
+.img-card p {
+  text-transform: uppercase;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  font-size: large;
 }
-.img-card:hover{
+.img-card:hover {
   background: #4d0079;
   transition: all ease 0.5s;
 }
-main{
-  background: #8E2DE2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+main {
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 @media only screen and (max-width: 900px) {
   .img-container {
@@ -53,8 +60,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
   }
-  .img-card:hover{
+  .img-card:hover {
     scale: none;
-
-}
+  }
 }
